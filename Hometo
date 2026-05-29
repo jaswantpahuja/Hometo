@@ -139,7 +139,7 @@ href="https://wa.me/919999336298?text=New%20Order:%20Charger">
 
 <div class="box">
 
-<h2>Snacks</h2>
+<h2>Snacks</h2>s
 
 <p>
 jo khana hai vo mangayo.
@@ -167,5 +167,10 @@ href="https://wa.me/919999336298?text=New%20Order:%20Snacks">
 </html>
 
 """
+import os
 
-app.run(host="0.0.0.0", port=5000)
+app.run(
+    host="0.0.0.0",
+    port=int(os.environ.get("PORT",
+5000))
+)
